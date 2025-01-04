@@ -50,11 +50,6 @@ while True:
     elif "exit" in text:
         speak("Goodbye!")
         break
-    elif "open" in text:
-        speak("What do you want me to open?")
-        open = listen() + (".exe")
-        os.system(f"start {open}")
-        speak(f"Opening {open}.")
     elif "stop" in text:
             break
     elif "hello" in text:
@@ -64,7 +59,7 @@ while True:
     elif "what is your name" in text:
         speak("My name is Jarvis.")
     elif "what can you do" in text:
-            speak("I can search the internet for you, open applications, and more")
+            speak("I can search the internet for you, and more")
     elif "who made you" in text:
         speak("I was made by a person named Soulucid. His information is available at https://guns.lol/soulucid/")
     elif "what is the time" in text:
